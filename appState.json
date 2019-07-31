@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "MergeTest/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    console.log(\"Hello\");\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    console.log(\"Hello World!!!\");\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -30,7 +30,12 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": []
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPItesthead",
+            "config": {}
+          }
+        ]
       }
     },
     "deletedFiles": [],
@@ -39,7 +44,45 @@
       "fb04c7d2-4925-492b-8e79-d254a3ee71c3"
     ],
     "currentFileId": "fb04c7d2-4925-492b-8e79-d254a3ee71c3",
-    "resources": {},
+    "resources": {
+      "apigusEast1TestAPItesthead": {
+        "name": "apigusEast1TestAPItesthead",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/hiru/test": "2b8zt0",
+            "/testPathWithSlash": "2rkw74",
+            "/hiru": "3nc52b",
+            "/hiru/sample": "4226gg",
+            "/hiru/sqstest": "88gr2y",
+            "/MyLambda": "98nqbj",
+            "/fintech": "f1vucr",
+            "/": "h2lelj6j7k",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk",
+            "/hiru/snscheck": "wok1ku"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/hiru/test",
+          "resourceName": "test",
+          "resourceId": "2b8zt0",
+          "restMethod": "HEAD",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Prod",
+          "stageDeploymentId": "rhk7mb",
+          "mode": 1
+        }
+      }
+    },
     "customTemplate": {
       "dialect": null,
       "definitions": {}
@@ -65,13 +108,18 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1564551726997
+    "lastSave": 1564551773506
   },
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
       "name": "MergeTest",
-      "branches": [],
+      "branches": [
+        {
+          "name": "master",
+          "hash": "ee8830e811726fa600dba616f6fbd6259b95dbd3"
+        }
+      ],
       "url": "https://github.com/zgma-test/MergeTest"
     }
   }
