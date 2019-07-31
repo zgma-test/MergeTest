@@ -1,0 +1,78 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "535431eb-d95d-4f48-a729-0a93db583379": {
+        "id": "535431eb-d95d-4f48-a729-0a93db583379",
+        "parent": null,
+        "name": "MergeTest",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "fb04c7d2-4925-492b-8e79-d254a3ee71c3"
+        ],
+        "isRemovable": false,
+        "filePath": "MergeTest"
+      },
+      "fb04c7d2-4925-492b-8e79-d254a3ee71c3": {
+        "id": "fb04c7d2-4925-492b-8e79-d254a3ee71c3",
+        "parent": "535431eb-d95d-4f48-a729-0a93db583379",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "MergeTest/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    console.log(\"Hello\");\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "535431eb-d95d-4f48-a729-0a93db583379",
+    "openFiles": [
+      "fb04c7d2-4925-492b-8e79-d254a3ee71c3"
+    ],
+    "currentFileId": "fb04c7d2-4925-492b-8e79-d254a3ee71c3",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "MergeTest",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1564551726997
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "MergeTest",
+      "branches": [],
+      "url": "https://github.com/zgma-test/MergeTest"
+    }
+  }
+}
